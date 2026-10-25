@@ -12,11 +12,8 @@ services:
       NEOFORGE_VERSION: "26.3.0.36-beta"
       ONLINE_MODE: "FALSE"
       MEMORY: 16G
-      ENABLE_WHITELIST: "TRUE"
-      ENFORCE_WHITELIST: "TRUE"
-      WHITELIST: |
-        MrDarkne
-      ONLINE_MOD: "FALSE"
+      # vanilla whitelist off: CWhitelist handles it (case-insensitive names), manage with `cwhitelist add name <player>`
+      ENABLE_WHITELIST: "FALSE"
       MODRINTH_PROJECTS: |
         chunky
         clumps
@@ -28,6 +25,7 @@ services:
         sound-physics-remastered
         simple-voice-chat
         mixauth
+        cwhitelist
       MODRINTH_DOWNLOAD_DEPENDENCIES: required
       # Simple Voice Chat has only beta builds for 26.3
       MODRINTH_ALLOWED_VERSION_TYPE: beta
