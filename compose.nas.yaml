@@ -5,7 +5,7 @@ services:
     env_file: /share/Container/minecraft/.env
     environment:
       EULA: "TRUE"
-      MOTD: "§c§ls§6§le§e§lr§a§lw§b§le§9§lr §d§l1c"
+      MOTD: "&dserwer 1c"
       TYPE: NEOFORGE
       VERSION: "26.3"
       # pinned below 26.3.0.37 (ModConfig.Type rename) until MixAuth > 1.3.3 is released
